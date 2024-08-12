@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de Juan</title>
     <script src="js/Alerta.js"></script>
+    <link rel="stylesheet" href="css/Estilos.css">
 </head>
+
 <body>
     <p>holaaaaa</p>
     <input type="button" value="Haz clic aquí" onclick="hola()">
@@ -17,5 +20,14 @@
     <input type="button" value="Función ciclo 2" onclick="ciclo2()">
     <br><br>
     <input type="button" value="Fecha de hoy" onclick="fecha()">
+    <div class="separador"></div>
+    <h1>Lista de tareas</h1>
+    <input type="text" id="tarea" placeholder="Ingrese una tareas nueva">
+    <button class="button_Style" id="agregarTareas" onclick="AgregarTarea()">Agregar tarea</button>
+
+    <ul id="Lista">
+        
+    </ul>
 </body>
+
 </html>

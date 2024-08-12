@@ -1,0 +1,17 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: gray;
+}
+
+button {
+    color: white;
+    background-color: rgb(63, 61, 61);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.separador {
+    border-top: 2px solid #303030; /* Color y grosor de la línea */
+    margin: 20px 0; /* Espaciado arriba y abajo */
+}

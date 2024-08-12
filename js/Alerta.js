@@ -56,3 +56,38 @@ function fecha(){
     console.log("la fecha de hoy es "+fecha);
     console.log("dia "+dia+"\nmes "+(mes+1)+"\nAño "+anio+"\ y la hora es "+hora+":"+minutosgit );
 }
+
+function AgregarTarea(){
+    let tarea = document.getElementById("tarea").value;
+    let tareasGuardadas = document.getElementById("Lista").getElementsByTagName("Li");
+
+    if(tarea === "" || tarea === " "){
+        alert("ingrese una tarea")
+        return;
+    };
+
+    for(let i=0; i<tareasGuardadas.length;i++){
+        if(tarea == tareasGuardadas[i].firstChild.textContent.trim()){
+            console.log("la tarea nueva es "+tarea+" y la antigua es "+tareasGuardadas[i].textContent);
+            alert("La tarea ya existe");
+            return
+        }else{
+            console.log("entró al else");
+        }
+    }
+
+    let nuevaTarea = document.createElement('li');
+    nuevaTarea.textContent = tarea+" ";
+
+    let botonEliminar = document.createElement("button");
+    botonEliminar.textContent = "Eliminar";
+    botonEliminar.onclick = function (){
+        nuevaTarea.remove();
+    };
+
+    nuevaTarea.appendChild(botonEliminar);
+
+    document.getElementById("Lista").appendChild(nuevaTarea);
+    document.getElementById("tarea").value="";
+
+}
