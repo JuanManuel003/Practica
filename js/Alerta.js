@@ -45,3 +45,14 @@ function ciclo2(){
         }
     }
 }
+
+function fecha(){
+    let fecha = new Date();
+    let dia = fecha.getDate();
+    let mes = fecha.getMonth();
+    let anio = fecha.getFullYear();
+    let hora = fecha.getHours();
+    let minutos = fecha.getMinutes();
+    console.log("la fecha de hoy es "+fecha);
+    console.log("dia "+dia+"\nmes "+(mes+1)+"\nAño "+anio+"\ y la hora es "+hora+":"+minutosgit );
+}
