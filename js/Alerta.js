@@ -28,3 +28,20 @@ function ejercicio() {
         alert("la resta es menor a cero");
     }
 }
+
+function ciclo(){
+    let numero = prompt("ingrese hast aque numero desea contar");
+
+    for(let i=1; i<=numero;i++){
+        console.log(i+"\n");
+    }
+}
+
+function ciclo2(){
+    for(let i=10; i>=0;i--){
+        console.log(i+"\n");
+        if(i==0){
+            console.log("Feliz año nuevo");
+        }
+    }
+}
